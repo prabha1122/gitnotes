@@ -1,0 +1,82 @@
+Git is a distributed version control system. It keeps track of any changes 
+you make to your files and folders
+
+As a distributed version control system, Git doesn’t require a centralized 
+authority to keep track of the code. Older centralized version controls like 
+CVS, SVN or Perforce require central servers to maintain the history of 
+changes. Git can keep track of all the changes locally and work peer-topeer. So it’s more versatile than centralized systems
+
+
+Once you have installed Git, it’s time to set up your username and email:
+$ git config --global user.name "yourusername"
+$ git config --global user.email "yourusername@example.com"
+It’s important to set the user.name and user.email because these 
+configurations are used to track your changes.
+
+
+
+You can check if the configurations have been set properly using the 
+following command:
+$ git config --list
+
+
+if we want to understand git we need a these prerequisites
+
+1.working directory
+2.staging area
+3.repository
+4.Remote Repository
+
+
+<---->The working directory, the staging area, and the repository are local to your 
+machine.
+
+<--->The staging box is a temporary area,
+
+<--When you move it to the repository box, two things happen:
+1. A snapshot of the document is saved permanently.
+2. A log file entry is made to go with the snapshot.
+The log entry will help you find that particular snapshot of your document if 
+you need it in the future
+3.The box in the supply 
+room would be the remote repository.
+The remote repository is kind of like sharing your document using Google 
+Docs or Dropbox.
+
+
+
+Suppose you’re working on a web development project. Let’s create a 
+folder called project_helloworld and change into the directory:
+$ mkdir project_helloworld
+$ cd project_helloworld
+
+
+
+Basic Git Commands: status, log, add, and commit
+The status command shows the current condition of your working directory 
+and the log command shows the history. Let’s try the status command:
+$ git status
+
+//output is: on branch master:
+
+$ git log:it dispalys history
+fatal: your current branch 'master' does not have any commits yet
+
+
+$ git add .
+
+
+your changes are in the staging area. You can commit it to the 
+repository for permanent safekeeping:
+$ git commit -m "new file"
+
+$ git checkout -b :If you want to create a new branch to retain commits you create,
+git checkout -b <new-branch-name> //syntax
+
+
+
+
+
+
+
+
